@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Nunito",sans-serif;
+}
+:root{
+    --background-nav:#0a2db8;
+}
+
+.page-body{
+    min-width: 1440px;
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    height: 80px;
+}
+.link ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.link ul li{
+    margin-left: 50px;
+    font-size: 25px;
+    color: #ffffff;
+}
+.link ul li a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    opacity: .8;
+    font-size: 18px;
+    color: #e6e6e6;
+    letter-spacing: 0;
+    text-align: center;
+}
+.link ul li a:hover{
+    color: #ffffff;
+    opacity: 1;
+}
+.link ul li.active::after{
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 5px;
+    opacity: 1;
+}
+.link ul li:nth-child(2):hover::after{
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 5px;
+    opacity: 1;
+}
+.link ul li:nth-child(3):hover::after{
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 5px;
+    opacity: 1;
+}
+.link ul li:nth-child(4):hover::after{
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 5px;
+    opacity: 1;
+}
+.sliders{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.sliders input{
+    display: none;
+}
+.slider{
+    transition:  3s;
+}
+.navigation-manual{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.manual-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #ffffff;
+    width: 38px;
+}
+.info-cafe{
+    padding: 0 0 5 0px 0;
+}
+.info-cafe h2{
+    padding: 50px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+.information .landing-items img{
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+.information .landing-items h5{
+    max-width: 150px;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.information .landing-items h6{
+    text-align: center;
+    max-width: 260px;
+    font-size: 13px;
+}
+.photo-content{
+    position: absolute;
+    bottom: -900px;
+    left: 70px;
+    color: #fff;
+    z-index: 9;
+}
+.photo-content .div1 span{
+    font-size: 50px;
+    font-weight: bold;
+}
+.line{
+    margin-top: 50px;
+    width: 100px;
+    margin-bottom: 50px;
+    border: 1px solid #fff;
+    opacity: .46;
+}
+.photo-content .div2 span{
+   max-width: 500px;
+   font-size: 20px;
+}
+.photo-content::before{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: #0a2db8;
+    border-radius: 100%;
+    left: -10px;
+    top: -30px;
+    z-index: -1;
+}
